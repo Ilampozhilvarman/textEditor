@@ -23,6 +23,10 @@ body {
 #content-container div {
   height: 30px;
   line-height: 30px;
-  border-bottom: 1px solid #eee; 
   padding-left: 10px;
+}
+
+#viewport {
+    position: absolute;
+    bottom: 0;
 }

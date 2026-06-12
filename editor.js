@@ -2,6 +2,7 @@ const DATA = Array.from({ length: 100000 }, (_, i) => `Line of code ${i + 1}`);
 const LINE_HEIGHT = 30;
 const VIEWPORT_HEIGHT = 700;
 const BUFFER_ITEMS = 5;
+let currentLine = 0
 const viewport = document.getElementById('viewport');
 const phantom = document.getElementById('phantom');
 const contentContainer = document.getElementById('content-container');
@@ -26,4 +27,9 @@ function updateVirtualScroll() {
   contentContainer.innerHTML = html;
 }
 viewport.addEventListener('scroll', updateVirtualScroll);
+contentContainer.addEventListener("keydown", function(ev) {
+    if (ev.key === "Enter") {
+        ev.preventDefault();
+    }
+});
 updateVirtualScroll();
