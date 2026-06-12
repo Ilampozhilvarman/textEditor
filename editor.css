@@ -13,11 +13,6 @@ body {
     color: white;
 }
 
-#lines {
-    width: 100%;
-    padding: 0;
-}
-
 #viewport, #content-container {
   font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
@@ -26,6 +21,8 @@ body {
 }
 
 #content-container div {
-  height: 30px;       /* Must match your JavaScript LINE_HEIGHT */
-  line-height: 30px;  /* Ensures text sits perfectly in the center of the row */
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #eee; 
+  padding-left: 10px;
 }
