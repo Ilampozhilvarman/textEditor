@@ -1,3 +1,4 @@
+@import url('https://googleapis.com');
 * {
     box-sizing: border-box;
 }
@@ -15,4 +16,16 @@ body {
 #lines {
     width: 100%;
     padding: 0;
+}
+
+#viewport, #content-container {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-variant-ligatures: contextual;
+  font-feature-settings: "liga", "calt";
+}
+
+#content-container div {
+  height: 30px;       /* Must match your JavaScript LINE_HEIGHT */
+  line-height: 30px;  /* Ensures text sits perfectly in the center of the row */
 }
